@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 660" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skySunset" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#1E293B" />
+      <stop offset="35%" stopColor="#451A03" />
+      <stop offset="70%" stopColor="#D97706" />
+      <stop offset="100%" stopColor="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="boxBevel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#292524" />
+      <stop offset="100%" stopColor="#0C0A09" />
+    </linearGradient>
+    <filter id="boxShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="tileShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background wood table surface -->
+  <rect width="1000" height="660" fill="#292524"/>
+
+  <!-- Main Game Box Container -->
+  <g transform="translate(60, 40)" filter="url(#boxShadow)">
+    <!-- Box Body -->
+    <rect width="880" height="560" rx="16" fill="url(#boxBevel)" stroke="#44403C" stroke-width="2"/>
+
+    <!-- Sunset Landscape Illustration in upper body -->
+    <g clip-path="url(#boxClip)">
+      <clipPath id="boxClip">
+        <rect width="880" height="560" rx="16"/>
+      </clipPath>
+
+      <!-- Sunset Sky -->
+      <rect width="880" height="420" fill="url(#skySunset)"/>
+      <!-- Sun burst -->
+      <circle cx="530" cy="270" r="140" fill="#FEF08A" opacity="0.35" filter="blur(20px)"/>
+      <circle cx="530" cy="270" r="50" fill="#FEF9C3" opacity="0.75"/>
+
+      <!-- Distant Mountain silhouette -->
+      <path d="M 0,320 L 180,240 L 320,290 L 460,210 L 530,240 L 620,190 L 760,280 L 880,230 L 880,440 L 0,440 Z" fill="#2E1065" opacity="0.45"/>
+      <path d="M 0,340 L 220,270 L 390,320 L 530,260 L 670,310 L 880,250 L 880,440 L 0,440 Z" fill="#1C1917" opacity="0.8"/>
+
+      <!-- Forest tree silhouettes -->
+      <g fill="#0C0A09">
+        <!-- Left trees -->
+        <polygon points="20,400 40,260 60,400" />
+        <polygon points="50,400 75,230 100,400" />
+        <polygon points="90,400 115,280 140,400" />
+        <polygon points="120,400 150,220 180,400" />
+        <polygon points="170,400 200,290 230,400" />
+        <!-- Right trees -->
+        <polygon points="700,400 730,230 760,400" />
+        <polygon points="740,400 770,180 800,400" />
+        <polygon points="780,400 810,240 840,400" />
+        <polygon points="820,400 850,190 880,400" />
+      </g>
+
+      <!-- Center winding dirt trail toward sunset -->
+      <path d="M 440,430 C 470,360 510,320 530,275 C 538,320 570,360 610,430 Z" fill="#B45309" opacity="0.55"/>
+    </g>
+
+    <!-- Top Left Ribbon: A B.A.M.B.I. PRODUCT -->
+    <g transform="translate(45, 30)">
+      <polygon points="0,0 120,0 120,110 60,95 0,110" fill="#111827" stroke="#F59E0B" stroke-width="2"/>
+      <text x="60" y="32" fill="#9CA3AF" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2">A</text>
+      <text x="60" y="58" fill="#F59E0B" font-family="Playfair Display, Georgia, serif" font-size="17" font-weight="900" text-anchor="middle" letter-spacing="1">B.A.M.B.I.</text>
+      <text x="60" y="80" fill="#D1D5DB" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2">PRODUCT</text>
+      <text x="60" y="98" fill="#F59E0B" font-family="system-ui" font-size="10" text-anchor="middle">★★★</text>
+    </g>
+
+    <!-- Main Title -->
+    <g transform="translate(500, 100)">
+      <text x="0" y="0" fill="#F9FAFB" font-family="system-ui, sans-serif" font-size="76" font-weight="900" text-anchor="middle" letter-spacing="12">PATHWAY</text>
+      <line x1="-280" y1="18" x2="-180" y2="18" stroke="#F59E0B" stroke-width="2"/>
+      <text x="0" y="24" fill="#F3F4F6" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="4">THE DOMINO EFFECT RECOVERY GAME</text>
+      <line x1="180" y1="18" x2="280" y2="18" stroke="#F59E0B" stroke-width="2"/>
+    </g>
+
+    <!-- Center Domino Cross Game Field -->
+    <g transform="translate(500, 310)" filter="url(#tileShadow)">
+      <!-- Center Circular Hub -->
+      <circle cx="0" cy="0" r="58" fill="#FFFFFF" stroke="#1F2937" stroke-width="3"/>
+      <!-- Hub 4 Quadrants colored wedges -->
+      <path d="M 0,0 L -38,-38 A 54,54 0 0,1 0,-54 Z" fill="#DC2626" opacity="0.85"/>
+      <path d="M 0,0 L 0,-54 A 54,54 0 0,1 38,-38 Z" fill="#2563EB" opacity="0.85"/>
+      <path d="M 0,0 L -38,38 A 54,54 0 0,0 0,54 Z" fill="#7C3AED" opacity="0.85"/>
+      <path d="M 0,0 L 0,54 A 54,54 0 0,0 38,38 Z" fill="#EA580C" opacity="0.85"/>
+
+      <!-- Center Title Text -->
+      <rect x="-42" y="-14" width="84" height="28" rx="6" fill="#FFFFFF"/>
+      <text x="0" y="6" fill="#111827" font-family="system-ui" font-size="15" font-weight="900" text-anchor="middle" letter-spacing="1">PATHWAY</text>
+
+      <!-- TOP ARM TILES (Vertical) -->
+      <!-- Tile 1: Self Check -->
+      <g transform="translate(-25, -112)">
+        <rect width="50" height="46" rx="6" fill="#FDFBF7" stroke="#D1D5DB" stroke-width="1.5"/>
+        <text x="25" y="16" fill="#2563EB" font-family="system-ui" font-size="12" text-anchor="middle">👁</text>
+        <text x="25" y="32" fill="#1F2937" font-family="system-ui" font-size="8" font-weight="700" text-anchor="middle">Self Check</text>
+      </g>
+      <!-- Tile 2: Poor Sleep -->
+      <g transform="translate(-25, -162)">
+        <rect width="50" height="46" rx="6" fill="#FDFBF7" stroke="#D1D5DB" stroke-width="1.5"/>
+        <text x="25" y="16" fill="#DC2626" font-family="system-ui" font-size="12" text-anchor="middle">🧱</text>
+        <text x="25" y="32" fill="#1F2937" font-family="system-ui" font-size="8" font-weight="700" text-anchor="middle">Poor Sleep</text>
+      </g>
+      <!-- Tile 3: Stress -->
+      <g transform="translate(-25, -212)">
+        <rect width="50" height="46" rx="6" fill="#FDFBF7" stroke="#D1D5DB" stroke-width="1.5"/>
+        <text x="25" y="16" fill="#DC2626" font-family="system-ui" font-size="12" text-anchor="middle">🧱</text>
+        <text x="25" y="32" fill="#1F2937" font-family="system-ui" font-size="9" font-weight="800" text-anchor="middle">Stress</text>
+      </g>
+
+      <!-- RIGHT ARM TILES (Horizontal) -->
+      <!-- Tile 1: Nobody Cares -->
+      <g transform="translate(64, -25)">
+        <rect width="48" height="50" rx="6" fill="#FDFBF7" stroke="#D1D5DB" stroke-width="1.5"/>
+        <text x="24" y="18" fill="#7C3AED" font-family="system-ui" font-size="12" text-anchor="middle">🧠</text>
+        <text x="24" y="34" fill="#1F2937" font-family="system-ui" font-size="7.5" font-weight="700" text-anchor="middle">Nobody Cares</text>
+      </g>
+      <!-- Tile 2: Isolation -->
+      <g transform="translate(116, -25)">
+        <rect width="48" height="50" rx="6" fill="#FDFBF7" stroke="#D1D5DB" stroke-width="1.5"/>
+        <text x="24" y="18" fill="#16A34A" font-family="system-ui" font-size="12" text-anchor="middle">👣</text>
+        <text x="24" y="34" fill="#1F2937" font-family="system-ui" font-size="8" font-weight="700" text-anchor="middle">Isolation</text>
+      </g>
+      <!-- Tile 3: Lie -->
+      <g transform="translate(168, -25)">
+        <rect width="42" height="50" rx="6" fill="#FDFBF7" stroke="#D1D5DB" stroke-width="1.5"/>
+        <text x="21" y="18" fill="#16A34A" font-family="system-ui" font-size="12" text-anchor="middle">👣</text>
+        <text x="21" y="34" fill="#1F2937" font-family="system-ui" font-size="9" font-weight="800" text-anchor="middle">Lie</text>
+      </g>
+      <!-- Tile 4: Sponsor Call -->
+      <g transform="translate(214, -25)">
+        <rect width="52" height="50" rx="6" fill="#FDFBF7" stroke="#D1D5DB" stroke-width="1.5"/>
+        <text x="26" y="18" fill="#EA580C" font-family="system-ui" font-size="12" text-anchor="middle">🤝</text>
+        <text x="26" y="34" fill="#1F2937" font-family="system-ui" font-size="8" font-weight="700" text-anchor="middle">Sponsor Call</text>
+      </g>
+
+      <!-- BOTTOM ARM TILES (Vertical) -->
+      <!-- Tile 1: Self Check -->
+      <g transform="translate(-25, 64)">
+        <rect width="50" height="46" rx="6" fill="#FDFBF7" stroke="#D1D5DB" stroke-width="1.5"/>
+        <text x="25" y="16" fill="#2563EB" font-family="system-ui" font-size="12" text-anchor="middle">👁</text>
+        <text x="25" y="32" fill="#1F2937" font-family="system-ui" font-size="8" font-weight="700" text-anchor="middle">Self Check</text>
+      </g>
+      <!-- Tile 2: Skip Work -->
+      <g transform="translate(-25, 114)">
+        <rect width="50" height="46" rx="6" fill="#FDFBF7" stroke="#D1D5DB" stroke-width="1.5"/>
+        <text x="25" y="16" fill="#16A34A" font-family="system-ui" font-size="12" text-anchor="middle">👣</text>
+        <text x="25" y="32" fill="#1F2937" font-family="system-ui" font-size="8" font-weight="700" text-anchor="middle">Skip Work</text>
+      </g>
+      <!-- Tile 3: Use -->
+      <g transform="translate(-25, 164)">
+        <rect width="50" height="46" rx="6" fill="#FDFBF7" stroke="#D1D5DB" stroke-width="1.5"/>
+        <text x="25" y="16" fill="#16A34A" font-family="system-ui" font-size="12" text-anchor="middle">👣</text>
+        <text x="25" y="32" fill="#DC2626" font-family="system-ui" font-size="9" font-weight="900" text-anchor="middle">Use</text>
+      </g>
+
+      <!-- LEFT ARM TILES (Horizontal) -->
+      <!-- Tile 1: Pause -->
+      <g transform="translate(-112, -25)">
+        <rect width="46" height="50" rx="6" fill="#FDFBF7" stroke="#D1D5DB" stroke-width="1.5"/>
+        <text x="23" y="18" fill="#2563EB" font-family="system-ui" font-size="12" text-anchor="middle">👁</text>
+        <text x="23" y="34" fill="#1F2937" font-family="system-ui" font-size="8.5" font-weight="700" text-anchor="middle">Pause</text>
+      </g>
+      <!-- Tile 2: Ask For Help -->
+      <g transform="translate(-166, -25)">
+        <rect width="50" height="50" rx="6" fill="#FDFBF7" stroke="#D1D5DB" stroke-width="1.5"/>
+        <text x="25" y="18" fill="#2563EB" font-family="system-ui" font-size="12" text-anchor="middle">👁</text>
+        <text x="25" y="34" fill="#1F2937" font-family="system-ui" font-size="7.5" font-weight="700" text-anchor="middle">Ask For Help</text>
+      </g>
+      <!-- Tile 3: Group Support -->
+      <g transform="translate(-222, -25)">
+        <rect width="52" height="50" rx="6" fill="#FDFBF7" stroke="#D1D5DB" stroke-width="1.5"/>
+        <text x="26" y="18" fill="#EA580C" font-family="system-ui" font-size="12" text-anchor="middle">🤝</text>
+        <text x="26" y="34" fill="#1F2937" font-family="system-ui" font-size="7.5" font-weight="700" text-anchor="middle">Group Support</text>
+      </g>
+    </g>
+
+    <!-- Right Legend Panel -->
+    <g transform="translate(680, 240)">
+      <rect width="180" height="190" rx="10" fill="#0C0A09" opacity="0.8" stroke="#44403C"/>
+      <!-- Barriers -->
+      <g transform="translate(14, 18)">
+        <text x="0" y="12" fill="#EF4444" font-family="system-ui" font-size="14">🧱</text>
+        <text x="24" y="8" fill="#EF4444" font-family="system-ui" font-size="10" font-weight="800">BARRIERS</text>
+        <text x="24" y="20" fill="#9CA3AF" font-family="system-ui" font-size="8">Obstacles or pressures</text>
+      </g>
+      <!-- Awareness -->
+      <g transform="translate(14, 52)">
+        <text x="0" y="12" fill="#3B82F6" font-family="system-ui" font-size="14">👁</text>
+        <text x="24" y="8" fill="#3B82F6" font-family="system-ui" font-size="10" font-weight="800">AWARENESS</text>
+        <text x="24" y="20" fill="#9CA3AF" font-family="system-ui" font-size="8">Insight or realization</text>
+      </g>
+      <!-- Mindsets -->
+      <g transform="translate(14, 86)">
+        <text x="0" y="12" fill="#A855F7" font-family="system-ui" font-size="14">🧠</text>
+        <text x="24" y="8" fill="#A855F7" font-family="system-ui" font-size="10" font-weight="800">MINDSETS</text>
+        <text x="24" y="20" fill="#9CA3AF" font-family="system-ui" font-size="8">Beliefs or self-talk</text>
+      </g>
+      <!-- Behaviors -->
+      <g transform="translate(14, 120)">
+        <text x="0" y="12" fill="#22C55E" font-family="system-ui" font-size="14">👣</text>
+        <text x="24" y="8" fill="#22C55E" font-family="system-ui" font-size="10" font-weight="800">BEHAVIORS</text>
+        <text x="24" y="20" fill="#9CA3AF" font-family="system-ui" font-size="8">Actions continuing path</text>
+      </g>
+      <!-- Interventions -->
+      <g transform="translate(14, 154)">
+        <text x="0" y="12" fill="#F97316" font-family="system-ui" font-size="14">🤝</text>
+        <text x="24" y="8" fill="#F97316" font-family="system-ui" font-size="10" font-weight="800">INTERVENTIONS</text>
+        <text x="24" y="20" fill="#9CA3AF" font-family="system-ui" font-size="8">Actions interrupting path</text>
+      </g>
+    </g>
+
+    <!-- Bottom Slogan & Metadata Bar -->
+    <g transform="translate(45, 470)">
+      <!-- Left Callout -->
+      <text x="0" y="20" fill="#FFFFFF" font-family="system-ui" font-size="16" font-weight="800" letter-spacing="1">BUILD THE CHAIN.</text>
+      <text x="0" y="42" fill="#FFFFFF" font-family="system-ui" font-size="16" font-weight="800" letter-spacing="1">BREAK THE CHAIN.</text>
+      <text x="0" y="66" fill="#F59E0B" font-family="system-ui" font-size="17" font-weight="900" letter-spacing="1">CHANGE THE OUTCOME.</text>
+
+      <!-- Bottom Specs Bar -->
+      <g transform="translate(0, 80)">
+        <rect x="-10" y="-12" width="810" height="2" fill="#374151"/>
+        <text x="0" y="14" fill="#9CA3AF" font-family="system-ui" font-size="11" font-weight="600">👥 2-8 PLAYERS</text>
+        <text x="140" y="14" fill="#9CA3AF" font-family="system-ui" font-size="11" font-weight="600">🤝 TEAMS OR INDIVIDUALS</text>
+        <text x="340" y="14" fill="#9CA3AF" font-family="system-ui" font-size="11" font-weight="600">💬 DISCUSSION FOCUSED</text>
+        <text x="540" y="14" fill="#9CA3AF" font-family="system-ui" font-size="11" font-weight="600">❤️ RECOVERY FOCUSED</text>
+        <text x="710" y="14" fill="#9CA3AF" font-family="system-ui" font-size="11" font-weight="600">⏱️ 30-90 MIN</text>
+      </g>
+    </g>
+  </g>
+</svg>

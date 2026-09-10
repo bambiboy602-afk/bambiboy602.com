@@ -1,0 +1,10 @@
+{
+  "name": "B.A.M.B.I. Peer Support & Recovery",
+  "description": "B.A.M.B.I. Peer Support Services founded by Bambi. Featuring the Pathway Domino Effect Recovery Game, Participant Workbook, Recovery Video Library (YouTube & Google Drive), Real Support Resources, and Tom AI Voice Avatar with Google Search data.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

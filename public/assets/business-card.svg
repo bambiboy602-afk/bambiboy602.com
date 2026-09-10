@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;family=Permanent+Marker&amp;family=Architects+Daughter&amp;display=swap');
+      .marker-bold { font-family: 'Permanent Marker', Impact, sans-serif; fill: #111111; }
+      .marker-hand { font-family: 'Caveat', 'Architects Daughter', cursive, sans-serif; font-weight: 700; fill: #111111; }
+      .label-bold { font-family: 'Permanent Marker', sans-serif; fill: #111111; letter-spacing: 1px; }
+      .desc-hand { font-family: 'Caveat', cursive, sans-serif; font-weight: 700; fill: #1C1917; }
+    </style>
+    <!-- Paper texture pattern -->
+    <filter id="kraftTexture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise"/>
+      <feDiffuseLighting in="noise" lighting-color="#C29D74" surfaceScale="1.5" result="light">
+        <feDistantLight azimuth="60" elevation="50"/>
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light"/>
+    </filter>
+    <!-- Drop Shadow -->
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Card Body -->
+  <g filter="url(#cardShadow)">
+    <rect width="1920" height="1080" rx="32" fill="#C29D74" stroke="#9E784F" stroke-width="4"/>
+
+    <!-- Subtle cardboard paper grain specks -->
+    <g opacity="0.25" fill="#4A3420">
+      <circle cx="150" cy="180" r="3"/>
+      <circle cx="420" cy="280" r="2.5"/>
+      <circle cx="890" cy="140" r="3.5"/>
+      <circle cx="1200" cy="300" r="2"/>
+      <circle cx="1650" cy="190" r="4"/>
+      <circle cx="280" cy="720" r="3"/>
+      <circle cx="750" cy="850" r="2"/>
+      <circle cx="1400" cy="820" r="3.5"/>
+      <circle cx="1780" cy="650" r="2.5"/>
+      <circle cx="950" cy="550" r="3"/>
+    </g>
+
+    <!-- Top Left Header -->
+    <text class="marker-bold" x="110" y="125" font-size="64" letter-spacing="1.5">PHOENIX HEAT IS REAL.  120°+</text>
+    <text class="marker-bold" x="290" y="190" font-size="52" letter-spacing="1">DON'T DO IT ALONE.</text>
+    <path d="M 105,215 Q 520,205 940,212" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Huge Headline: I CAN HELP. I GOT YOU. -->
+    <text class="marker-bold" x="100" y="360" font-size="140" letter-spacing="3">I CAN HELP.</text>
+    <text class="marker-bold" x="160" y="525" font-size="140" letter-spacing="3">I Got YOU.</text>
+
+    <!-- Brush Banner: REAL SUPPORT. REAL CHANGE. -->
+    <g transform="translate(130, 560)">
+      <!-- Jagged hand-painted brush stroke -->
+      <path d="M 0,40 C 20,8 100,5 240,6 C 450,4 720,8 890,30 C 925,35 930,55 900,68 C 850,88 650,92 420,90 C 200,88 40,82 0,65 C -15,58 -15,46 0,40 Z" fill="#111111"/>
+      <path d="M 20,25 Q 460,18 900,28 L 885,82 Q 450,96 15,80 Z" fill="#111111"/>
+      <text class="marker-bold" x="460" y="68" font-size="52" fill="#FBF9F5" text-anchor="middle" letter-spacing="3">
+        REAL SUPPORT. REAL CHANGE.
+      </text>
+    </g>
+
+    <!-- Hand-drawn Oval Stamp -->
+    <g transform="translate(560, 760)">
+      <!-- Outer sketchy oval -->
+      <ellipse cx="0" cy="0" rx="420" ry="78" fill="none" stroke="#111111" stroke-width="7" transform="rotate(-1.5)"/>
+      <!-- Inner sketchy oval -->
+      <ellipse cx="2" cy="0" rx="412" ry="72" fill="none" stroke="#111111" stroke-width="3" stroke-dasharray="20,4" transform="rotate(-1.5)"/>
+      <!-- Text inside oval -->
+      <text class="marker-bold" x="0" y="-22" font-size="34" text-anchor="middle" letter-spacing="2">GET OFF THE STREETS.</text>
+      <text class="marker-bold" x="0" y="16" font-size="34" text-anchor="middle" letter-spacing="2">GET WORKING. GET LEGAL.</text>
+      <text class="marker-bold" x="0" y="54" font-size="34" text-anchor="middle" letter-spacing="2">GET YOUR LIFE BACK.</text>
+    </g>
+
+    <!-- Center Vertical Divider Line -->
+    <path d="M 1120,220 Q 1125,500 1120,820" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Right Side: Top Sun Doodle -->
+    <g transform="translate(1620, 120)">
+      <!-- Sun Arch -->
+      <path d="M -70,25 A 70,70 0 0,1 70,25" fill="none" stroke="#111111" stroke-width="7" stroke-linecap="round"/>
+      <!-- Sun Rays -->
+      <line x1="-90" y1="18" x2="-115" y2="10" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+      <line x1="-75" y1="-25" x2="-98" y2="-45" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+      <line x1="-35" y1="-65" x2="-45" y2="-92" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+      <line x1="0" y1="-75" x2="0" y2="-105" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+      <line x1="35" y1="-65" x2="45" y2="-92" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+      <line x1="75" y1="-25" x2="98" y2="-45" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+      <line x1="90" y1="18" x2="115" y2="10" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- Sun Captions -->
+      <text class="marker-bold" x="0" y="55" font-size="38" text-anchor="middle">IT'S</text>
+      <text class="marker-bold" x="15" y="98" font-size="42" text-anchor="middle">TOO HOT</text>
+      <text class="marker-bold" x="15" y="138" font-size="38" text-anchor="middle">TO BE</text>
+      <text class="marker-bold" x="15" y="180" font-size="44" text-anchor="middle">HOMELESS.</text>
+    </g>
+
+    <!-- 4 Pillars Section -->
+
+    <!-- Pillar 1: HOUSING -->
+    <g transform="translate(1160, 235)">
+      <!-- House Icon -->
+      <path d="M 10,65 L 55,20 L 100,65 Z" fill="none" stroke="#111111" stroke-width="6" stroke-linejoin="round"/>
+      <rect x="25" y="65" width="60" height="45" fill="none" stroke="#111111" stroke-width="6"/>
+      <rect x="43" y="80" width="24" height="30" fill="none" stroke="#111111" stroke-width="5"/>
+      <!-- Text -->
+      <text class="marker-bold" x="145" y="60" font-size="42" letter-spacing="1">HOUSING</text>
+      <text class="marker-hand" x="145" y="105" font-size="44">Find a safe place.</text>
+    </g>
+
+    <!-- Pillar 2: WORK RESOURCES -->
+    <g transform="translate(1160, 365)">
+      <!-- Briefcase Icon -->
+      <rect x="15" y="40" width="80" height="60" rx="8" fill="none" stroke="#111111" stroke-width="6"/>
+      <path d="M 38,40 L 38,22 Q 55,18 72,22 L 72,40" fill="none" stroke="#111111" stroke-width="6"/>
+      <line x1="15" y1="68" x2="95" y2="68" stroke="#111111" stroke-width="5"/>
+      <rect x="48" y="60" width="14" height="15" fill="#111111"/>
+      <!-- Text -->
+      <text class="marker-bold" x="145" y="55" font-size="42" letter-spacing="1">WORK RESOURCES</text>
+      <text class="marker-hand" x="145" y="98" font-size="42">Jobs, resumes,</text>
+      <text class="marker-hand" x="145" y="135" font-size="42">help getting to work.</text>
+    </g>
+
+    <!-- Pillar 3: TREATMENT -->
+    <g transform="translate(1160, 525)">
+      <!-- Heart with Plus Icon -->
+      <path d="M 55,100 C 15,65 10,35 28,20 C 45,8 55,22 55,22 C 55,22 65,8 82,20 C 100,35 95,65 55,100 Z" fill="none" stroke="#111111" stroke-width="6" stroke-linejoin="round"/>
+      <line x1="55" y1="40" x2="55" y2="68" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+      <line x1="41" y1="54" x2="69" y2="54" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+      <!-- Text -->
+      <text class="marker-bold" x="145" y="50" font-size="42" letter-spacing="1">TREATMENT</text>
+      <text class="marker-hand" x="145" y="92" font-size="42">Recovery programs</text>
+      <text class="marker-hand" x="145" y="128" font-size="42">and support.</text>
+    </g>
+
+    <!-- Pillar 4: LEGAL HELP -->
+    <g transform="translate(1160, 680)">
+      <!-- Scales of Justice Icon -->
+      <line x1="55" y1="20" x2="55" y2="90" stroke="#111111" stroke-width="6"/>
+      <line x1="20" y1="35" x2="90" y2="35" stroke="#111111" stroke-width="6"/>
+      <!-- Left Pan -->
+      <line x1="20" y1="35" x2="5" y2="65" stroke="#111111" stroke-width="4"/>
+      <line x1="20" y1="35" x2="35" y2="65" stroke="#111111" stroke-width="4"/>
+      <path d="M 2,65 Q 20,78 38,65 Z" fill="none" stroke="#111111" stroke-width="5"/>
+      <!-- Right Pan -->
+      <line x1="90" y1="35" x2="75" y2="65" stroke="#111111" stroke-width="4"/>
+      <line x1="90" y1="35" x2="105" y2="65" stroke="#111111" stroke-width="4"/>
+      <path d="M 72,65 Q 90,78 108,65 Z" fill="none" stroke="#111111" stroke-width="5"/>
+      <!-- Base -->
+      <line x1="35" y1="90" x2="75" y2="90" stroke="#111111" stroke-width="7" stroke-linecap="round"/>
+      <!-- Text -->
+      <text class="marker-bold" x="145" y="48" font-size="42" letter-spacing="1">LEGAL HELP</text>
+      <text class="marker-hand" x="145" y="90" font-size="42">Get your legal issues</text>
+      <text class="marker-hand" x="145" y="125" font-size="42">right. Move forward.</text>
+    </g>
+
+    <!-- Framed Box: ONE MAN. ONE MISSION. NO JUDGMENT. JUST HELP. -->
+    <g transform="translate(1150, 835)">
+      <rect x="0" y="0" width="620" height="95" fill="none" stroke="#111111" stroke-width="6" stroke-linejoin="round"/>
+      <rect x="4" y="4" width="612" height="87" fill="none" stroke="#111111" stroke-width="2" stroke-dasharray="12,4"/>
+      <text class="marker-bold" x="310" y="42" font-size="34" text-anchor="middle" letter-spacing="1">ONE MAN.  ONE MISSION.</text>
+      <text class="marker-bold" x="310" y="78" font-size="34" text-anchor="middle" letter-spacing="1">NO JUDGMENT.  JUST HELP.</text>
+    </g>
+
+    <!-- Bottom Full Width Divider Line -->
+    <path d="M 100,945 Q 960,938 1820,945" stroke="#111111" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- Bottom Footer Row: BAMBI | 602-767-2147 | BAMBIBOY602@GMAIL.COM -->
+    <g transform="translate(110, 1025)">
+      <text class="marker-bold" x="0" y="0" font-size="95" letter-spacing="4">BAMBI</text>
+
+      <!-- Vertical bar divider -->
+      <line x1="375" y1="-75" x2="375" y2="5" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- Phone icon in circle -->
+      <g transform="translate(435, -35)">
+        <circle cx="28" cy="0" r="32" fill="#111111"/>
+        <!-- Phone Handset -->
+        <path d="M 18,-15 C 22,-18 26,-15 28,-11 L 32,-4 C 34,-1 32,3 29,5 L 24,9 C 27,15 32,20 38,23 L 42,18 C 44,15 48,13 51,15 L 58,19 C 62,21 65,25 62,29 C 58,35 48,37 40,33 C 26,27 15,16 9,2 C 5,-6 7,-16 13,-20 Z" fill="#C29D74" transform="scale(0.8) translate(-10, -8)"/>
+      </g>
+      <text class="marker-bold" x="520" y="0" font-size="70" letter-spacing="2">602-767-2147</text>
+
+      <!-- Vertical bar divider -->
+      <line x1="1025" y1="-75" x2="1025" y2="5" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- Envelope Icon -->
+      <g transform="translate(1085, -35)">
+        <rect x="0" y="-22" width="60" height="44" rx="6" fill="#111111"/>
+        <path d="M 4,-18 L 30,2 L 56,-18" fill="none" stroke="#C29D74" stroke-width="4"/>
+      </g>
+      <text class="marker-bold" x="1170" y="0" font-size="52" letter-spacing="1">BAMBIBOY602@GMAIL.COM</text>
+    </g>
+  </g>
+</svg>

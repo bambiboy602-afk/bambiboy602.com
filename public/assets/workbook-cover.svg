@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&amp;family=Inter:wght@400;600;700;800;900&amp;family=Playfair+Display:ital,wght@1,600&amp;display=swap');
+      .title-bambi { font-family: 'Cinzel', 'Times New Roman', serif; font-weight: 800; letter-spacing: 12px; fill: #102A43; }
+      .sub-acronym { font-family: 'Inter', sans-serif; font-weight: 700; letter-spacing: 4px; fill: #1E3A5F; font-size: 13px; }
+      .desc-text { font-family: 'Inter', sans-serif; font-weight: 600; fill: #334E68; font-size: 16px; }
+      .badge-text { font-family: 'Inter', sans-serif; font-weight: 800; letter-spacing: 3px; fill: #FFFFFF; font-size: 15px; }
+      .step-title { font-family: 'Inter', sans-serif; font-weight: 800; letter-spacing: 1.5px; font-size: 12px; }
+      .quote-script { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 600; fill: #D99B26; font-size: 26px; }
+      .footer-caps { font-family: 'Inter', sans-serif; font-weight: 700; letter-spacing: 3px; fill: #D9E2EC; font-size: 13px; }
+    </style>
+
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="35%" stop-color="#FEF3C7"/>
+      <stop offset="60%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <linearGradient id="lakeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F2D4A"/>
+      <stop offset="40%" stop-color="#1B4D7E"/>
+      <stop offset="80%" stop-color="#143A5F"/>
+      <stop offset="100%" stop-color="#0A192F"/>
+    </linearGradient>
+
+    <linearGradient id="mountain1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#486581"/>
+      <stop offset="100%" stop-color="#102A43"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="1100" fill="#F8FAFC"/>
+
+  <!-- Top Title Header -->
+  <g transform="translate(400, 105)" text-anchor="middle">
+    <text class="title-bambi" font-size="82" x="6">B.A.M.B.I.</text>
+    <text class="sub-acronym" y="46">BEHAVIORAL ADAPTATION &amp; MOBILITY-BASED INTEGRATION</text>
+    <line x1="-280" y1="68" x2="280" y2="68" stroke="#CBD5E1" stroke-width="1.5"/>
+    <text class="desc-text" y="100">A Structured Pathway for Awareness,</text>
+    <text class="desc-text" y="125">Behavior Change, and Lasting Integration.</text>
+
+    <!-- Navy Pill Badge: PARTICIPANT WORKBOOK -->
+    <rect x="-180" y="152" width="360" height="42" rx="6" fill="#102A43"/>
+    <text class="badge-text" y="179">PARTICIPANT WORKBOOK</text>
+  </g>
+
+  <!-- Lake & Mountain Illustration Area -->
+  <g transform="translate(0, 340)">
+    <!-- Sky & Sun -->
+    <rect width="800" height="430" fill="url(#skyGrad)"/>
+    <circle cx="580" cy="160" r="90" fill="#FEF08A" opacity="0.8"/>
+    <circle cx="580" cy="160" r="140" fill="#FEF3C7" opacity="0.4"/>
+
+    <!-- Mountain Peaks Background -->
+    <polygon points="0,220 180,80 340,190 560,40 720,180 800,120 800,260 0,260" fill="url(#mountain1)" opacity="0.85"/>
+    <polygon points="0,240 120,140 260,230 420,120 600,210 800,160 800,260 0,260" fill="#1B4D7E" opacity="0.6"/>
+
+    <!-- Pine Forest Silhouette -->
+    <path d="M 0,260 L 0,215 Q 15,200 30,220 Q 50,195 70,225 Q 95,200 120,220 L 800,220 L 800,260 Z" fill="#0B1D33"/>
+
+    <!-- Lake Water with Sun Reflection -->
+    <rect y="240" width="800" height="190" fill="url(#lakeGrad)"/>
+    <polygon points="560,240 600,240 630,430 530,430" fill="#FDE68A" opacity="0.25"/>
+
+    <!-- Wooden Dock Pier -->
+    <polygon points="340,430 460,430 440,320 360,320" fill="#78350F" stroke="#451A03" stroke-width="2"/>
+    <!-- Dock Planks -->
+    <line x1="358" y1="335" x2="442" y2="335" stroke="#451A03" stroke-width="2"/>
+    <line x1="355" y1="352" x2="445" y2="352" stroke="#451A03" stroke-width="2"/>
+    <line x1="351" y1="370" x2="449" y2="370" stroke="#451A03" stroke-width="2"/>
+    <line x1="347" y1="390" x2="453" y2="390" stroke="#451A03" stroke-width="2.5"/>
+    <line x1="343" y1="410" x2="457" y2="410" stroke="#451A03" stroke-width="2.5"/>
+
+    <!-- Dock Posts -->
+    <rect x="345" y="315" width="10" height="35" rx="2" fill="#292524"/>
+    <rect x="445" y="315" width="10" height="35" rx="2" fill="#292524"/>
+
+    <!-- Person Sitting in Meditation on Dock -->
+    <g transform="translate(400, 310)">
+      <!-- Head -->
+      <circle cx="0" cy="-35" r="11" fill="#111827"/>
+      <!-- Torso with hoodie -->
+      <path d="M -18,-20 C -18,-26 -10,-28 0,-28 C 10,-28 18,-26 18,-20 L 16,5 L -16,5 Z" fill="#1E293B"/>
+      <!-- Folded Legs / Lotus -->
+      <ellipse cx="0" cy="8" rx="26" ry="10" fill="#0F172A"/>
+      <!-- Arm resting on knee -->
+      <path d="M -16,-12 L -24,4 L -18,6" stroke="#1E293B" stroke-width="5" stroke-linecap="round"/>
+      <path d="M 16,-12 L 24,4 L 18,6" stroke="#1E293B" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- 5 Framework Circular Icons Strip -->
+  <g transform="translate(0, 770)">
+    <!-- Light warm banner container -->
+    <rect width="800" height="120" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1.5"/>
+
+    <!-- Icon 1: BASELINE (Navy) -->
+    <g transform="translate(140, 50)">
+      <circle cx="0" cy="0" r="28" fill="#102A43"/>
+      <!-- Compass Icon -->
+      <circle cx="0" cy="0" r="16" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+      <polygon points="0,-12 4,0 0,12 -4,0" fill="#FFFFFF"/>
+      <text class="step-title" y="44" fill="#102A43" text-anchor="middle">BASELINE</text>
+    </g>
+
+    <!-- Icon 2: AWARENESS (Teal) -->
+    <g transform="translate(270, 50)">
+      <circle cx="0" cy="0" r="28" fill="#0D9488"/>
+      <!-- Eye Icon -->
+      <path d="M -14,0 Q 0,-10 14,0 Q 0,10 -14,0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+      <circle cx="0" cy="0" r="4.5" fill="#FFFFFF"/>
+      <text class="step-title" y="44" fill="#0D9488" text-anchor="middle">AWARENESS</text>
+    </g>
+
+    <!-- Icon 3: MAPPING (Green) -->
+    <g transform="translate(400, 50)">
+      <circle cx="0" cy="0" r="28" fill="#166534"/>
+      <!-- Map Pin with Path -->
+      <path d="M -9,8 L -9,-6 L 0,-2 L 9,-6 L 9,8 L 0,12 Z" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+      <circle cx="0" cy="3" r="3" fill="#FFFFFF"/>
+      <text class="step-title" y="44" fill="#166534" text-anchor="middle">MAPPING</text>
+    </g>
+
+    <!-- Icon 4: BEHAVIOR (Amber / Orange) -->
+    <g transform="translate(530, 50)">
+      <circle cx="0" cy="0" r="28" fill="#D97706"/>
+      <!-- Double Chevron Forward -->
+      <path d="M -8,-8 L 0,0 L -8,8" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 0,-8 L 8,0 L 0,8" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+      <text class="step-title" y="44" fill="#D97706" text-anchor="middle">BEHAVIOR</text>
+    </g>
+
+    <!-- Icon 5: INTEGRATION (Purple) -->
+    <g transform="translate(660, 50)">
+      <circle cx="0" cy="0" r="28" fill="#6B21A8"/>
+      <!-- Rising Sun Horizon -->
+      <path d="M -12,4 L 12,4" stroke="#FFFFFF" stroke-width="2.5"/>
+      <path d="M -8,4 A 8,8 0 0,1 8,4" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+      <line x1="0" y1="-8" x2="0" y2="-12" stroke="#FFFFFF" stroke-width="2"/>
+      <line x1="-7" y1="-6" x2="-10" y2="-9" stroke="#FFFFFF" stroke-width="2"/>
+      <line x1="7" y1="-6" x2="10" y2="-9" stroke="#FFFFFF" stroke-width="2"/>
+      <text class="step-title" y="44" fill="#6B21A8" text-anchor="middle">INTEGRATION</text>
+    </g>
+  </g>
+
+  <!-- Bottom Deep Navy Footer Banner -->
+  <g transform="translate(0, 890)">
+    <rect width="800" height="210" fill="#0A192F"/>
+
+    <!-- Subtle topography lines -->
+    <path d="M 0,90 Q 200,60 400,90 Q 600,120 800,80" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+    <path d="M 0,130 Q 300,160 500,120 Q 700,80 800,130" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+
+    <g transform="translate(400, 70)" text-anchor="middle">
+      <text class="footer-caps">RECOGNIZE. UNDERSTAND. CHOOSE. INTEGRATE.</text>
+      <text class="quote-script" y="46">Move forward. Build your new baseline.</text>
+      <path d="M -90,65 Q 0,55 90,65" fill="none" stroke="#D99B26" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
