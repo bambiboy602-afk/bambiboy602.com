@@ -238,3 +238,4 @@ If you or someone you know is in immediate crisis, free and confidential support
 
 This project is licensed under the [MIT License](LICENSE).
 B.A.M.B.I., Pathway: The Domino Effect Recovery Game, and all related curriculum materials are proprietary concepts developed by Bambi.
+# getout247
